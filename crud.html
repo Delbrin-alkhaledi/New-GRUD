@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>GRUDS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icons/logo.ico.ico">
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+            <h2>crud</h2>
+            <p>PRODUKTLEDELSESSYSTEM</p>
+        </div>
+
+
+        <div class="inputs">
+            <input placeholder="tittel" type="text" id="tittel">
+            <div class="pris">
+                <input onkeyup="getTotal()" type="number" id="pris" placeholder="pris">
+                <input onkeyup="getTotal()" type="number" id="skatt" placeholder="skatt">
+                <input onkeyup="getTotal()" type="number" id="annonser" placeholder="annonser">
+                <input onkeyup="getTotal()" type="number" id="rabatt" placeholder="rabatt">
+                <small id="total"></small>
+            </div>
+            <input placeholder="telle" type="number" id="telle">
+            <input placeholder="kategori" type="text" id="kategori">
+            <button id="sendeinn">Skape</button>
+
+        </div>
+
+        <div class="outputs">
+            <div class="søkBlock">
+                <input onkeyup="søkData(this.value)" type="text" id="søk"placeholder="Søk">
+                <div class="btnSøk">
+                    <button onclick="getsøkMood(this.id)" id="søkTittel">Søk etter Tittel</button>
+                    <button onclick="getsøkMood(this.id)" id="søkKategori">Søk etter Kategori</button>
+                </div>
+            </div>
+        </div>
+        <div id="slettealle">
+
+        </div>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>tittel</th>
+                <th>pris</th>
+                <th>skatt</th>
+                <th>annonser</th>
+                <th>rabatt</th>
+                <th>Total</th>
+                <th>kategori</th>
+                <th>Oppdater</th>
+                <th>slette</th>
+            </tr>
+
+            <tbody id="tbody">
+             
+            </tbody>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

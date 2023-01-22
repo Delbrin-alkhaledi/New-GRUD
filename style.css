@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #2E86C1;
+    color: #fff;
+    font-family: systrm-ui;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+   text-align: center;
+   text-transform: uppercase;
+   margin: 10px 0;
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #003151;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+}
+input:focus{
+    background:  #001624;
+    transform: scale(1.02);
+}
+.pris input{
+    width: 21%;
+}
+#total{
+    background: #F1C40F;
+    padding: 6px 4px;
+    border-radius: 4px;
+}
+#total::before{
+    content: 'Total: ';
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: #F1C40F;
+    color: #fff;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+button:hover{
+    background: #001624;
+    letter-spacing: 1px;
+}
+.btnSøk{
+    display: flex;
+    justify-content: space-between;
+}
+.btnSøk button{
+    width: 35%;
+}
+#slettealle{
+    margin: 20px 0;
+}
+table button:hover{
+    transform: scale(1.1);
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+}
